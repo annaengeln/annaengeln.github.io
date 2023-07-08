@@ -1,0 +1,4 @@
+baseURL = 'http://annanengeln.github.io/'
+languageCode = 'de-de'
+title = 'My New Hugo Site'
+theme = 'ananke'
