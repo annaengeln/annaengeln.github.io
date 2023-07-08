@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{{ $baseurl := .Site.BaseURL }}
+<html lang = "en">
+    {{ partial "head.html" . }}
+    <body class="flex flex-col min-h-screen">
+        {{- partial "navigation.html" . -}}
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+<body class="h-screen overflow-hidden flex items-center justify-center">
+  <article class="prose lg:prose-lg mx-auto my-8 px-4">
+	<br>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <br><br>
+  </article>
+    </main>
+    </body>
+    <br><br>
+	{{- partial "footer.html" . -}}
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{{ $baseurl := .Site.BaseURL }}
+
+<html lang = "en">
+    {{ partial "head.html" . }}
+    <body class="flex flex-col min-h-screen">
+        {{- partial "navigation.html" . -}}
+<main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
+<body class="h-screen overflow-hidden flex items-center justify-center">
+	{{ $datestr := .Params.date }}
+  {{ if .Params.thumbnail }}
+  <div class="relative max-w-5xl mx-auto px-4">
+  	{{ $image := .Resources.GetMatch .Params.thumbnail }}
+    <img src="{{ $image.RelPermalink }}" class="rounded-lg shadow-md w-full object-contain" alt="{{ .Title }}"/>
+    <div class="absolute top-4 right-8 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white px-2 py-0.5">
+      {{ $datestr.Format "2 January, 2006" }}
+    </div>
+  </div>
+  {{ end }}
+
+  <article class="prose lg:prose-lg mx-auto my-8 px-4">
+	<br>
+    <h1>{{ .Title }}</h1>
+    <h5 class="flex items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" class="mr-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="5" width="16" height="16" rx="2" />
+        <line x1="16" y1="3" x2="16" y2="7" />
+        <line x1="8" y1="3" x2="8" y2="7" />
+        <line x1="4" y1="11" x2="20" y2="11" />
+        <rect x="8" y="15" width="2" height="2" />
+      </svg>
+      {{ $datestr.Format "2 January, 2006" }}&nbsp;&bull;
+      <svg xmlns="http://www.w3.org/2000/svg" class="mx-1" width="16" height="16" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" />
+        <line x1="3" y1="6" x2="3" y2="19" />
+        <line x1="12" y1="6" x2="12" y2="19" />
+        <line x1="21" y1="6" x2="21" y2="19" />
+      </svg>
+      {{ .WordCount }}&nbsp;Words
+    </h5>
+    {{ .Content }}
+    <br><br>
+    <div class="flex items-center bg-white p-3 flex-wrap border-b rounded border-gray-200 px-2 sm:px-4 py-2.5 top-0"></div>
+    <br><br><br><br>
+    <h1>Comments</h1>
+    {{ partial "comments.html" . }}
+    <br><br>
+  </article>
+    </main>
+    </body>
+    <br><br>
+	{{- partial "footer.html" . -}}
+</html>

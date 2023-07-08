@@ -1,0 +1,59 @@
+<div class="py-4">  
+    <div class="container m-auto px-6 text-gray-500 md:px-12 xl:px-0">
+        <div class="mx-auto grid gap-6 md:w-3/4 lg:w-full lg:grid-cols-3">
+            <div class="bg-white rounded-lg border border-gray px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-900">Web Analytics</h3>
+                    <p class="mb-6">Application of expertise in data analytics and in-depth knowledge in Google Analytics and Google Tagmanager for conception, implementation and continuous development of a web analytics capability. Training of employees in analytics systems and establishment of data intelligence and optimisation processes.</p>
+                </div>
+                <table cellpadding="10">
+                <tr>
+                <td>
+               {{ $image := resources.Get "images/google-analytics-logo.png" }}
+              <img src="{{ $image.RelPermalink }}" width="50" height="{{ $image.Height }}" alt="The logo of Google Analytics">
+              </td>
+              <td>
+              {{ $image := resources.Get "images/google-tagmanager-logo.png" }}
+              <img src="{{ $image.RelPermalink }}" width="50" height="{{ $image.Height }}" alt="The logo of Google Tagmanager">
+              </td>
+            </tr>
+            </table>
+            </div>
+            <div class="bg-white rounded-lg border border-gray px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-900">Onsite Search</h3>
+                    <p class="mb-6">6+ years of experience with selecting, conceptualising, implementing and continuously optimising onsite search solutions. These include both out-of-the-box solutions like Attraqt Fredhopper and Bloomreach, as well as open source solutions like Elasticsearch and Solr.</p>
+                </div>
+                <table cellpadding="10">
+                <tr>
+                <td>
+               {{ $image := resources.Get "images/elasticsearch-logo.png" }}
+              <img src="{{ $image.RelPermalink }}" width="50" height="{{ $image.Height }}" alt="The logo of Elasticsearch search engine">
+              </td>
+            	<td>
+               {{ $image := resources.Get "images/solr-logo.png" }}
+              <img src="{{ $image.RelPermalink }}" width="50" height="{{ $image.Height }}" alt="The logo of Solr search engine">
+              </td>
+              <td>
+              {{ $image := resources.Get "images/fredhopper-logo.png" }}
+              <img src="{{ $image.RelPermalink }}" width="40" height="{{ $image.Height }}" alt="The logo of Attraqt Fredhopper search engine">
+              </td>
+              <td>
+              {{ $image := resources.Get "images/bloomreach-logo.png" }}
+              <img src="{{ $image.RelPermalink }}" width="50" height="{{ $image.Height }}" alt="The logo of Bloomreach brSM search engine">
+              </td>
+            </tr>
+            </table>
+            </div>
+            <div class="bg-white rounded-lg border border-gray px-8 py-12 sm:px-12 lg:px-8">
+                <div class="mb-12 space-y-4">
+                    <h3 class="text-2xl font-semibold text-gray-900">E-Commerce</h3>
+                    <p class="mb-6">Digital strategy setup for E-Commerce business and planning of E-Commerce, PIM and Merchandising system and data architectures. Expertise areas include Shopify and SAP hybris. Vendor selections can support fundamental long-term decisions for new system implementations based on a proven and fact-based approach.</p>
+                </div>
+                {{ $image := resources.Get "images/shopify-logo.png" }}
+    			<img src="{{ $image.RelPermalink }}" width="50" height="{{ $image.Height }}" alt="The logo of Shopify shop platform">
+            </div>
+        </div>
+    </div>
+</div>
+

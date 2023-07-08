@@ -1,4 +1,47 @@
-baseURL = 'http://annanengeln.github.io/'
-languageCode = 'de-de'
-title = 'My New Hugo Site'
-theme = 'ananke'
+theme = "fabianengeln"
+languageCode = "de-de"
+baseURL = "http://annanengeln.github.io/"
+title = "Anna Engeln"
+author = "Anna Engeln"
+copyright = "Copyright © 2022, Anna Engeln"
+
+# Code higlighting settings
+pygmentsCodefences = true
+pygmentsStyle = "vs"
+
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+enableRobotsTXT = true
+
+[params]
+    name = "Fabian Engeln"
+    description = "A simple bootstraped theme for Hugo, built with Tailwindcss."
+
+    github_user = "annaengeln"
+    github_repo = "https://github.com/annaengeln/annaengeln.github.io"
+    github_banner = true
+
+    favicon = "favicon.png"
+    frontBundle = "blog"
+    googleAnalyticsID = "G-LE1B0RZQC8"
+
+[menu]
+    [[menu.nav]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 1
+
+    [[menu.nav]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 2
+
+[permalinks]
+    blog = "/blog/:slug/"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5

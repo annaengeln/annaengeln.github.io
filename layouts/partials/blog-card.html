@@ -1,0 +1,16 @@
+<div class="p-2">
+<a href="{{ .Permalink }}">
+  {{ $image := .Resources.GetMatch .Params.thumbnail }}
+  <div class="relative">
+  {{ with $image }}
+    <img src="{{ $image.Permalink }}" alt="{{ .Params.title }}" class="rounded-lg shadow-md w-full h-52 object-cover" />
+    {{ end }}
+    <div class="absolute top-4 right-4 rounded shadow bg-white text-gray-900 dark:bg-gray-900 dark:text-white text-sm px-2 py-0.5">
+      {{ $datestr := .Params.date }}
+      {{ $datestr.Format "Jan 2, 06" }}
+    </div>
+  </div>
+  <div class="my-2 text-xl font-semibold">{{ .Params.title }}</div>
+  <div class="">{{ .Params.description }}</div>
+</a>
+</div>
