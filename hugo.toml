@@ -1,4 +1,4 @@
-theme = "fabianengeln"
+theme = "annaengeln"
 languageCode = "de-de"
 baseURL = "http://annanengeln.github.io/"
 title = "Anna Engeln"
@@ -14,7 +14,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
 enableRobotsTXT = true
 
 [params]
-    name = "Fabian Engeln"
+    name = "Anna Engeln"
     description = "A simple bootstraped theme for Hugo, built with Tailwindcss."
 
     github_user = "annaengeln"
@@ -22,24 +22,6 @@ enableRobotsTXT = true
     github_banner = true
 
     favicon = "favicon.png"
-    frontBundle = "blog"
-    googleAnalyticsID = "G-LE1B0RZQC8"
-
-[menu]
-    [[menu.nav]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
-    weight = 1
-
-    [[menu.nav]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 2
-
-[permalinks]
-    blog = "/blog/:slug/"
 
 [sitemap]
   changefreq = "weekly"

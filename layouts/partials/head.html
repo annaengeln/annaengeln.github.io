@@ -3,18 +3,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
 	{{- if eq "blog" .Type -}}
-	FE | Blog | {{ .Title -}}
+	AE | Blog | {{ .Title -}}
 	{{- else -}}
-    Fabian Engeln | Digital Consulting | {{ .Title -}}
+    Anna Engeln | Content Creation | {{ .Title -}}
     {{ end -}}</title>
     {{- if eq "blog" .Type -}}
     <meta name="description" content="{{ .Description }}" />
     {{- else if eq "privacy-policy" .Type -}}
-    <meta name="description" content="Read Fabian Engeln's Privacy Policy to understand how the data on the website is being used." />
+    <meta name="description" content="Lesen Sie die Datenschutzrichtlinie von Anna Engeln, um zu verstehen, wie die Daten auf der Website verwendet werden." />
     {{- else if eq "contact" .Type -}}
-    <meta name="description" content="Reach out to Fabian Engeln to find out more about Conversion Optimisation, Web Analytics and E-Commerce. Get a personal Consultation now!" />
+    <meta name="description" content="Kontaktieren Sie Anna Engeln, um mehr über Content-Erstellung, Social-Media-Management und Marketing zu erfahren. Lassen Sie sich jetzt persönlich beraten!" />
     {{ else }}
-    <meta name="description" content="Increase your E-Commerce Conversion Rate - Get Insights on how to analyse your Users' Behaviour and make them actionable." />
+    <meta name="description" content="Verbessern Sie Ihre Content-Strategie – Lassen Sie sich beraten, wie Sie überzeugende Inhalte für Ihre Endkunden erstellen können und die Conversion-Rate steigern." />
     {{ end -}}
     {{- if .Keywords }}
     <meta name="keywords" content="{{ delimit .Keywords "," }}" />

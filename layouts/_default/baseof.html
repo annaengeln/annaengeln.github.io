@@ -3,18 +3,11 @@
     {{ partial "head.html" . }}
     <body>
         {{- partial "homepage_teaser.html" . -}}
-        <div class="bg-gray-100 w-full pt-20 pb-20">
-        	{{- partial "homepage_competences.html" . -}}
+        <div class="w-full pb-20">
+        	{{- partial "homepage_clients.html" . -}}
 		</div>
-		<div class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-2 sm:mt-2 pt-20 pb-20">
-        	{{- partial "homepage_timeline.html" . -}}
-		</div>
-		<div class="flex-1 mx-4 md:mx-20 lg:mx-40 mt-2 sm:mt-2 pb-15">
-			{{- partial "newsletter_form.html" . -}}
-		</div>
+        <div class="mt-24">
         {{- partial "footer.html" . -}}
-        <div class="fixed bottom-0 left-0 w-full">
-        {{- partial "cookie-consent.html" . -}}
         </div>
     </body>
 </html>

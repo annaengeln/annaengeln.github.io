@@ -1,5 +1,5 @@
 ---
-author: Fabian Engeln
-title: "E-Commerce & Analytics"
-date: 2022-05-05
+author: Anna Engeln
+title: "Social Media Management"
+date: 2023-07-09
 ---

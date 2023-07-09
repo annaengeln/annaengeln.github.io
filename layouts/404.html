@@ -2,10 +2,9 @@
 <html lang = "en">
     {{ partial "head.html" . }}
     <body class="flex flex-col min-h-screen">
-        {{- partial "navigation.html" . -}}
 <main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
 <body class="h-screen overflow-hidden flex items-center justify-center">
-  <article class="prose lg:prose-lg mx-auto my-8 px-4">
+  <article class="prose lg:prose-lg mx-auto my-8 px-4 font-light font-serif antialiased">
 	<br>
     <h1>{{ .Title }}</h1>
     <h2><a href="{{ "/" | relURL }}">Go Home</a></h2>
