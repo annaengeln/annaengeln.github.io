@@ -3,12 +3,15 @@
     {{ partial "head.html" . }}
     <body>
         {{- partial "homepage_teaser.html" . -}}
-        <div class="w-full pb-20">
+        <div class="w-full´">
             {{- partial "homepage_offering.html" . -}}
         </div>
-        <div class="w-full pb-20">
+        <div class="w-full">
         	{{- partial "homepage_clients.html" . -}}
 		</div>
+        <div class="w-full">
+            {{- partial "about.html" . -}}
+        </div>
         <div class="mt-24">
         {{- partial "footer.html" . -}}
         </div>
