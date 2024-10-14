@@ -50,7 +50,7 @@
     <div class="bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0)_30%,_rgba(255,255,255,1)_30%),_linear-gradient(to_right,_rgba(255,72,19,1)_20%,_rgba(255,144,19,1)_60%)]"> 
     <div class="relative text-left w-full max-w-full overflow-hidden">
       <!-- Name and Title -->
-      <h1 class="text-2xl font-semibold text-black mb-4">Anna Engeln</h1>
+      <h1 class="text-2xl font-semibold text-black mb-0 md:mb-4 lg:mb-4">Anna Engeln</h1>
 
       <!-- Main Heading (One Line) -->
       <h2 class="text-7xl md:text-8xl lg:text-[110px] text-black leading-none  pt-40">
@@ -232,7 +232,7 @@
 
     <!-- Mobile Carousel -->
     <div class="overflow-x-auto scroll-snap-x-mandatory scroll-snap-type-x px-8" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
-      <div class="flex transition-transform duration-500 ease-in-out space-x-4 mb-12" id="carousel">
+      <div class="flex transition-transform duration-500 ease-in-out space-x-4 mb-24" id="carousel">
         <div class="w-full flex-shrink-0 shadow-2xl scroll-snap-align-center rounded-lg">
           <img src="static/creative_1.jpg" alt="Storyboard Image 1" class="w-full h-full object-cover rounded-lg">
         </div>
@@ -250,10 +250,9 @@
   </div>
 </section>
 
-
+<!--
 <section class="lg:px-36 lg:justify-between py-20 mx-auto items-center place-content-center bg-white">
   <h2 class="text-4xl text-black leading-tight tracking-tight px-8 md:px-0 lg:px-0 mb-6">Von der Idee bis zum Content</h2>
-  <!-- Desktop Images -->
   <div class="hidden md:grid md:grid-cols-4 gap-6">
     <div class="bg-white rounded-lg shadow-md">
       <img src="static/creative_1.jpg" alt="Storyboard Image 1" class="w-full rounded-lg">
@@ -268,8 +267,6 @@
       <img src="static/creative_4.jpg" alt="Storyboard Image 4" class="w-full rounded-lg">
     </div>
   </div>
-
-  <!-- Mobile Carousel -->
   <div class="md:hidden relative">
     <div class="overflow-x-auto scroll-snap-x-mandatory scroll-snap-type-x" style="scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">
       <div class="flex transition-transform duration-500 ease-in-out p-8 space-x-4 mb-12" id="carousel">
@@ -288,13 +285,12 @@
       </div>
     </div>
   </div>
-    <!-- Block text
     <br>
   <p class="text-lg text-black">
      Für die Erstellung wirkungsvoller Verkaufsvideos erstelle ich Storyboards. Damit können sich meine Klienten die Szenen besser vorstellen und wie sie potenziell auf die Kunden wirken.
-  </p>-->
+  </p>
 </section>
-
+-->
 <section class="lg:px-36 w-full max-w-full mx-auto bg-orange-50 py-20">
   <!-- Heading -->
   <h2 class="text-4xl text-black leading-tight tracking-tight px-8 md:px-0 lg:px-0 mb-6 text-center lg:text-left">
@@ -305,13 +301,13 @@
   <div class="flex flex-col lg:flex-row w-full lg:justify-between items-center">
     
     <!-- Left Column (Image) -->
-    <div class="w-full flex justify-center items-center">
+    <div class="w-full flex justify-center items-center mb-6 md:mb-0 lg:mb-0">
       <img src="static/newsletter.png" alt="Newsletter Beispiel" class="w-full h-auto object-cover">
     </div>
     
     <!-- Right Column (Text) -->
     <div class="w-full lg:pl-8 flex items-center justify-center">
-      <p class="text-lg text-black mb-4 lg:w-3/4">
+      <p class="text-lg text-black mb-4 lg:w-3/4 mx-12 md:mx-0 lg:mx-0">
         Die Newsletter für Cosy Roots sind passgenau auf das Markenbild abgestimmt und setzen gezielt aktuelle Kampagnen in den Fokus. Mit meinem Design-Support hat das Unternehmen in den letzten zwei Jahren nicht nur ansprechende und effektive Newsletter versendet, sondern auch den Umsatz nachhaltig gesteigert.
       </p>
     </div>
@@ -325,12 +321,14 @@
     <p class="orangecustom font-bold uppercase mb-2">Case Study #2</p>
 
     <!-- Heading text -->
- <h2 class="text-6xl text-black mb-4 leading-tight tracking-tight md:hidden">
+<h2 class="md:hidden text-6xl text-black mb-4 leading-tight tracking-tight">
   STIHL TIMBER<br>SPORTS©<br>
- </h2>
- <h2 class="text-6xl text-black mb-4 leading-tight tracking-tight sm:hidden">
+</h2>
+
+<!-- Second heading: visible on tablet and desktop -->
+<h2 class="hidden md:block text-6xl text-black mb-4 leading-tight tracking-tight">
   STIHL TIMBERSPORTS©<br>
- </h2>
+</h2>
 
     <!-- Block text -->
     <p class="text-lg text-black mb-4 md:mr-22 lg:mr-22">
