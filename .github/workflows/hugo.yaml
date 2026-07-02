@@ -60,6 +60,10 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
+      - name: Copy AI package landing page
+        run: |
+          mkdir -p ./public/ai-package
+          cp -R ./ai-package/. ./public/ai-package/.
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
